@@ -25,10 +25,10 @@ class MoyenneGeneraleClasse
 
     public function __invoke($data): JsonResponse
     {
-//        dump($data);die;
+
         $eleveRepo = $this->em->getRepository("App:Eleve");
         $eleves = $eleveRepo->findAll();
-//        dump($eleves);die;
+
         $totalNotes = 0;
         $cpt = 0;
         foreach ($eleves as $eleve) {
