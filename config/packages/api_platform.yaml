@@ -1,0 +1,10 @@
+api_platform:
+    title: 'API rest symfony'
+    description: 'API rest de gestion élèves'
+    show_webby: false
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    patch_formats:
+        json: ['application/merge-patch+json']
+    swagger:
+        versions: [3]
